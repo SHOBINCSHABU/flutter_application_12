@@ -47,16 +47,20 @@ class _ChatScreenState extends State<ChatScreen> {
         title: Text(
           "Dr.Upul",
           style: TextStyle(
-              fontWeight: FontWeight.bold, fontSize: 20, color: Colors.blue),
+              fontWeight: FontWeight.bold, 
+              fontSize: 20, 
+              color: Colors.blue),
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-            child: Icon(Icons.call),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 15, 
+              vertical: 15),
+            child: Icon(Icons.call_outlined),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-            child: Icon(Icons.videocam),
+            child: Icon(Icons.videocam_outlined),
           )
         ],
       ),
@@ -137,18 +141,20 @@ class _ChatScreenState extends State<ChatScreen> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '',
+            icon: Icon(Icons.home_outlined),
+            label: "Home",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.schedule),
-            label: '',
+            label: "Schedule",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.message),
-            label: '',
+            icon: Icon(Icons.sms_outlined),
+            label: "Messeges",
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "")
+          BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle_outlined), 
+              label: "Profile")
         ],
       ),
     );
